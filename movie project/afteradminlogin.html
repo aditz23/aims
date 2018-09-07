@@ -1,0 +1,282 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+
+
+
+
+
+.mySlides {display:none;}
+</style>
+
+
+
+
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="http://localhost/moviehome.html" class="w3-bar-item w3-button w3-wide" ><i class="fa fa-caret-square-o-left"></i>PERSONALISED MOVIE DATABASE SYSTEM</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+
+      <a href="http://localhost/moviehome.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGOUT</a>
+
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">LOGOUT</a>
+</nav>
+
+
+
+
+
+
+
+
+
+
+<!-- Work Section -->
+<div class="w3-container " style="padding:80px 20px" id="work">
+  <h3 class="w3-center">Welcome</h3>
+  <p class="w3-center w3-large">Aditya</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    
+<div class="w3-col l3 m6 w3-dropdown-hover" style="background-color:white;">
+
+      <img src="https://cdn-images-1.medium.com/max/1600/1*Xo2veEybn-xHDU2GFTkkbA.png" width="304" class="w3-hover-opacity img-responsive img-fluid" alt="Search">
+<div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="http://localhost/searchbyactor_name1.html" class="w3-bar-item w3-button">Actor name</a>
+      <a href="http://localhost/searchbydirector_name.html" class="w3-bar-item w3-button">Director name</a>
+      <a href="http://localhost/searchbyimdb.html" class="w3-bar-item w3-button">Imdb</a>
+<a href="http://localhost/searchbymovie_title.html" class="w3-bar-item w3-button">Movie title</a>
+<a href="http://localhost/searchbyyear.html" class="w3-bar-item w3-button">year</a>
+
+    </div>
+</div>
+
+
+    <div class="w3-col l3 m6 w3-dropdown-hover" style="background-color:white;">
+
+      <img src="http://static1.squarespace.com/static/52c69cf3e4b0e6f4b60b7c25/t/564ccbffe4b0cbbe97785788/1495011686665/" width="304" class="w3-hover-opacity img-fluid img-responsive" alt="Insert">
+   <div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="http://localhost/insertintomovie_details.html" class="w3-bar-item w3-button">Movie_details</a>
+      <a href="http://localhost/insertintocast_details.html" class="w3-bar-item w3-button">Cast_details</a>
+      <a href="http://localhost/insertintoinvestments_details.html" class="w3-bar-item w3-button">Investments</a>
+<a href="http://localhost/insertintoreviews.html" class="w3-bar-item w3-button">Reviews</a>
+<a href="http://localhost/insertintoothers.html" class="w3-bar-item w3-button">Others</a>
+
+    </div>
+</div>
+
+
+
+
+    <div class="w3-col l3 m6 w3-dropdown-hover" style="background-color:white;">
+
+      <img src="https://vignette.wikia.nocookie.net/criminal-case-grimsborough/images/b/b1/Delete_Icon.png/revision/latest?cb=20141216101607" width="200" class="w3-hover-opacity img-fluid img-responsive" alt="Delete">
+<div class="w3-dropdown-content w3-bar-block w3-border">
+         <a href="http://localhost/deletefrommovie_details.html" class="w3-bar-item w3-button">Movie_details</a>
+      <a href="http://localhost/deletefromcast_details.html" class="w3-bar-item w3-button">Cast_details</a>
+      <a href="http://localhost/deletefrominvestments.html" class="w3-bar-item w3-button">Investments</a>
+<a href="http://localhost/deletefromreviews.html" class="w3-bar-item w3-button">Reviews</a>
+<a href="http://localhost/deletefromothers.html" class="w3-bar-item w3-button">Others</a>
+
+    </div>
+</div>
+
+
+
+    <div class="w3-col l3 m6 w3-dropdown-hover" style="background-color:white;">
+
+      <img src="https://pbs.twimg.com/profile_images/902244718557491200/PN3aAiKN.jpg" width="150" class="w3-hover-opacity img-responsive img-fluid" alt="View">
+<div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="http://localhost/viewmovie_details.php" class="w3-bar-item w3-button">Movie_details</a>
+      <a href="http://localhost/viewcast_details.php" class="w3-bar-item w3-button">Cast_details</a>
+      <a href="http://localhost/viewinvestment_details.php" class="w3-bar-item w3-button">Investments</a>
+<a href="http://localhost/viewreviews.php" class="w3-bar-item w3-button">Reviews</a>
+<a href="http://localhost/viewothers.php" class="w3-bar-item w3-button">Others</a>
+<form action="popular.php"><input type="submit" name="button" value="Viewpopular" class="w3-bar-item w3-button"></input></form>
+
+    </div>
+</div>
+</div>
+
+
+<div class="w3-row-padding w3-section ">
+
+  <div class="w3-col l3 m6 w3-dropdown-hover" style="background-color:white;">
+
+      <img src="https://openclipart.org/download/256861/Update-Note--Arvin61r58.svg" width="220" height:auto class="w3-hover-opacity img-responsive img-fluid" alt="Update">
+<div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="http://localhost/updatemovie_details.html" class="w3-bar-item w3-button">Movie_details</a>
+      <a href="http://localhost/updatecast_details.html" class="w3-bar-item w3-button">Cast_details</a>
+      <a href="http://localhost/updateinvestment_details.html" class="w3-bar-item w3-button">Investments</a>
+<a href="http://localhost/updatereviews.html" class="w3-bar-item w3-button">Reviews</a>
+<a href="http://localhost/updateothers.html" class="w3-bar-item w3-button" >Others</a>
+
+    </div>
+</div>
+
+
+
+
+    <div class="w3-col l3 m6 w3-dropdown-hover" style="background-color:white;">
+
+      <img src="https://pbs.twimg.com/profile_images/830114606810963968/uD_yobOp_400x400.jpg" width="230" height:auto  class="w3-hover-opacity img-responsive img-fluid" alt="Trigger">
+<div class="w3-dropdown-content w3-bar-block w3-border">
+<form action="popular.php"><input type="submit" name="button" value="Viewpopular" class="w3-bar-item w3-button"></input></form>
+
+    </div>
+</div>
+
+
+
+    <div class="w3-col l3 m6 w3-dropdown-hover" style="background-color:white;">
+
+      <img src="http://www.fssairenewal.com/wp-content/uploads/fssai-renewal.gif" width="170"  class="w3-hover-opacity img-responsive img-fluid" alt="Procedure">
+<div class="w3-dropdown-content w3-bar-block w3-border">
+<form action="popular.php"><input type="submit" name="button" value="Viewpopular" class="w3-bar-item w3-button"></input></form>
+
+    </div>
+</div>
+
+
+
+    <div class="w3-col l3 m6" style="background-color:white;">
+<a href="http://localhost/moviehome.html">
+      <img src="https://www.aegon.co.uk/content/dam/ukpaw/customers-login.svg" width="200"  class="w3-hover-opacity img-responsive img-fluid" alt="Logout">
+</a>
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/aditya.priyadarshi.165" target="_self" ><i class="fa fa-facebook-official w3-hover-opacity" style="color:white;"></i></a>
+    <a href="https://www.instagram.com/priyadarshi_aditya/?hl=en" target="_self" ><i class="fa fa-instagram w3-hover-opacity" style="color:white;"></i></a>   
+    <a href="https://www.linkedin.com/in/aditya-priyadarshi-88b801149/" target="_self"><i class="fa fa-linkedin w3-hover-opacity" style="color:white;"></i></a>
+  </div>
+<p>Developed with <span class="glyphicon glyphicon-heart-empty"></span> by Aditya and Abhishek</p>
+  <p>Copyright © 2017 WEB-TECH. Disclaimer: This site stores files on its server.</p>
+</footer>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

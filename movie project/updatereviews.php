@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;}
+body { 
+ background: url('http://wallpapersdsc.net/wp-content/uploads/2015/10/Deadpool_movie_55.jpg') no-repeat center center fixed; 
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.panel-default {
+ opacity: 0.9;
+ margin-top:30px;
+}
+.form-group.last {
+ margin-bottom:0px;
+}
+</style>
+
+
+
+
+
+
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="http://localhost/moviehome.html" class="w3-bar-item w3-button w3-wide" ><i class="fa fa-caret-square-o-left"></i>PERSONALISED MOVIE DATABASE SYSTEM</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+
+      <a href="http://localhost/moviehome.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> LOGOUT</a>
+
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="http://localhost/moviehome.html" onclick="w3_close()" class="w3-bar-item w3-button">LOGOUT</a>
+</nav>
+
+
+
+
+<body>
+<div style="padding-top: 300px;" style="background:transparent;">
+<h1 style="text-color:white;font-size:200%;text-align:center;"><strong>UPDATE REVIEWS TABLE</strong></h1>
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="container">
+                <div class="panel-body" style="background:transparent;padding-right:800px;">
+                   
+
+
+
+
+
+<?php
+$con=mysqli_connect("localhost","root","");
+mysqli_select_db($con,"movies");
+
+$director_name=$_GET["director_name"];
+$num_user=$_GET["num_user"];
+$num_critic=$_GET["num_critic"];
+$imdb_score=$_GET["imdb_score"];
+
+
+
+
+if($_REQUEST['button']=='Update')
+{
+	mysqli_query($con,"UPDATE review SET director_name='$director_name', num_user='$num_user', num_critic='$num_critic', imdb_score= '$imdb_score' WHERE imdb_score= '$imdb_score'");
+}
+$query=mysqli_query($con,"select * from review where imdb_score='$imdb_score'");
+echo "<table class='styled' border=\"1\">";
+echo "<tr><td class='head'>"."director_name"."</td><td class='head'>"."num_user"."</td><td class='head'>"."num_critic"."</td><td class='head'>"."imdb_score"."</td><td>"."</tr></td>";
+while($row=mysqli_fetch_array($query))
+{
+	echo "<tr><td class='ele'>".$row['director_name']."</td><td class='ele'>".$row['num_user']."</td><td class='ele'>".$row['num_critic']."</td><td class='ele'>".$row['imdb_score']."</td><td>"."</tr></td>";
+}
+echo "</table>";
+mysqli_close($con);
+?>
+
+
+
+<div class="conatiner" style="padding-top:10px;">
+<a href="http://localhost/moviehome.html" class="btn btn-info alert alert-danger" role="button" >Logout</a>
+</div>
+
+
+                    </div>        
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+
+
+
+
+<style>
+.styled { 
+border-collapse: collapse;
+border-radius:20px;
+border-spacing: 5px;
+font-family: Arial, Helvetica, sans-serif;
+    padding: 8px;
+padding-left: 80px;
+border-color: #008080;
+min-width: 10px;
+ }
+.head
+{
+			border-color: #008080;
+			text-transform: uppercase;
+font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+
+
+
+color: white;
+background-color: #008080;
+text-align: left;
+font-size: 14px;
+padding: 5px;
+}
+.ele
+{
+font-family: "Lucida Sans Unicode", "Lucida Grande", "Segoe Ui";
+text-align: left;
+font-size: 14px;
+padding: 5px;
+color: white;
+border-color: #008080;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

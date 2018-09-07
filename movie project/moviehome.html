@@ -1,0 +1,359 @@
+﻿<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+.mySlides {display:none;}
+</style>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide" ><i class="fa fa-caret-square-o-left"></i>PERSONALISED MOVIE DATABASE SYSTEM</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-male"></i>ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> WORK</a>
+      <a href="#login" class="w3-bar-item w3-button"><i class="fa fa-user-circle "></i> LOGIN</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+<a href="http://localhost/terms.html" class="w3-bar-item w3-button"><i class="fa fa-handshake-o"></i>TERMS</a>
+<a href="http://localhost/tutorials.html" class="w3-bar-item w3-button"><i class="fa fa-caret-square-o-right"></i>TUTORIAL</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+  <a href="#login" onclick="w3_close()" class="w3-bar-item w3-button">LOGIN</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+<a href="http://localhost/terms.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i>TERMS</a>
+<a href="http://localhost/tutorials.html" class="w3-bar-item w3-button"><i class="fa fa-caret-square-o-right"></i>TUTORIALS</a>
+</nav>
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" style="max-width:750px;text-align-center;" id="home">
+  <div class="w3-content w3-section w3-center">
+  <img class="mySlides " src="http://sf.co.ua/14/06/wallpaper-1167512.jpg" width="1600">
+  <img class="mySlides" src="http://www.doublemesh.com/wp-content/uploads/2015/10/Spectre-Movie-Poster-Wallpaper-1920x1080.jpg" width="1600">
+  <img class="mySlides " src="http://cdn.pcwallart.com/images/guardians-of-the-galaxy-movie-wallpaper-4.jpg" width="1600">
+<img class="mySlides " src="https://www.artsfon.com/pic/201512/1920x1080/artsfon.com-78126.jpg" width="1600">
+<img class="mySlides " src="https://i.pinimg.com/originals/b4/b0/e8/b4b0e866e22dc0714ed7f5b54bfcb3c2.jpg" width="1600">
+<img class="mySlides " src="http://cdn.pcwallart.com/images/jurassic-park-3-poster-wallpaper-4.jpg" width="1600">
+<img class="mySlides " src="http://tweedandroidboxes.ca/Kodi_backgrounds/movies/Joker-In-Batman-Movie-Poster-HD-Wallpaper.jpg" width="1600">
+</div>
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <a href="https://www.facebook.com/aditya.priyadarshi.165" target="_self" ><i class="fa fa-facebook-official w3-hover-opacity" style="color:white;"></i></a>
+    <a href="https://www.instagram.com/priyadarshi_aditya/?hl=en" target="_self" ><i class="fa fa-instagram w3-hover-opacity" style="color:white;"></i></a>
+    <a href="https://www.linkedin.com/in/aditya-priyadarshi-88b801149/" target="_self"><i class="fa fa-linkedin w3-hover-opacity" style="color:white;"></i></a>
+  </div>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</header>
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE SITE</h3>
+  <p class="w3-center w3-large">Key features of our Site</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Web pages can be viewed using many different devices: desktops, tablets, and phones. Your web page should look good, and be easy to use, regardless of the device.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>As our name suggests, we have a passion for all things creative. We can help you find that point of difference and tell your story in a creative way.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Design is concerned with what the user actually sees on their computer screen or mobile device, and less so about the mechanisms beneath the surface that make it all work.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>At WEB-TECH Customer Service is an integral part of our job. Our most vital assets are you – our customers. Without you, we would not and could not exist.</p>
+    </div>
+  </div>
+</div>
+<!-- Promo Section - "After about" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Latest Movies Trailer</h3>
+      <p>Justice League 2018 First Look</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <div class="responsiveRapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h-Nzxn9qiSg" frameborder="0" allowfullscreen></iframe>
+</div>
+    </div>
+  </div>
+</div>
+<style type="text/css">
+.responsiveRapper {
+	overflow:hidden;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	position:relative;
+}
+.responsiveRapper iframe,
+.responsiveRapper object,
+.responsiveRapper embed {
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+</style>
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this company</p>
+<div class="container well" style="height: 420px;
+    width: 60%;
+>
+<div class="background">
+  <div class="transbox">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="thumbnail">
+          <img src="http://res.cloudinary.com/jssate/image/upload/v1507357899/20626932_476315442721179_6797150769844174671_o_v5p2pn.jpg" class="img-circle img-fluid img-responsive" alt="" style="width:200px;height:200px;
+" > <div class="caption">
+<h4 style="text-align: center;">Aditya Priyadarshi</h4>
+            <p style="text-align: center;"></br>A Full-Stack Developer with knowledge of HTML,CSS,Bootstrap,Jquery,Database,PHP and Javascript. A Developer and Opensource Contributor.</p>
+          </div>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">20+</span>
+    <br>Entries
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">5</span>
+    <br>Tables
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">25</span>
+    <br>Attributes
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">1</span>
+    <br>Site
+  </div>
+</div>
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What all we provide.</p>
+  <div class="w3-row-padding w3-grayscale-max" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+<a href="https://www.w3schools.com/html/html_images.asp">
+      <img src="https://cdn-images-1.medium.com/max/1600/1*Xo2veEybn-xHDU2GFTkkbA.png" width="304" class="w3-hover-opacity img-responsive img-fluid" alt="Search"></a>
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://static1.squarespace.com/static/52c69cf3e4b0e6f4b60b7c25/t/564ccbffe4b0cbbe97785788/1495011686665/" width="304" class="w3-hover-opacity img-fluid img-responsive" alt="Insert">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://vignette.wikia.nocookie.net/criminal-case-grimsborough/images/b/b1/Delete_Icon.png/revision/latest?cb=20141216101607" width="200" class="w3-hover-opacity img-fluid img-responsive" alt="Delete">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://pbs.twimg.com/profile_images/902244718557491200/PN3aAiKN.jpg" width="150" class="w3-hover-opacity img-responsive img-fluid" alt="View">
+    </div>
+  </div>
+  <div class="w3-row-padding w3-section w3-grayscale-max">
+    <div class="w3-col l3 m6">
+      <img src="https://openclipart.org/download/256861/Update-Note--Arvin61r58.svg" width="220" height:auto class="w3-hover-opacity img-responsive img-fluid" alt="Update">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://pbs.twimg.com/profile_images/830114606810963968/uD_yobOp_400x400.jpg" width="230" height:auto  class="w3-hover-opacity img-responsive img-fluid" alt="Trigger">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="http://www.fssairenewal.com/wp-content/uploads/fssai-renewal.gif" width="170"  class="w3-hover-opacity img-responsive img-fluid" alt="Procedure">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://www.aegon.co.uk/content/dam/ukpaw/customers-login.svg" width="200"  class="w3-hover-opacity img-responsive img-fluid" alt="Login">
+    </div>
+  </div>
+</div>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+<!-- provide Section -->
+<div class="w3-container w3-light-grey w3-padding-64" >
+  <div class="w3-row-padding" style="height:90px;">
+      <h2>What we provide.</h2>
+<div id="myTypingText" style="font-size:18px;"></div>
+      </div>
+    </div>
+  </div>
+<script>
+var myString = "Search Movies Online - on Personalised Movie Database System, here you can search about movies and watch online trailers in high quality for free without annoying advertising, just come and enjoy your movies.";
+var myArray = myString.split("");
+var loopTimer;
+function frameLooper() {
+	if(myArray.length > 0) {
+		document.getElementById("myTypingText").innerHTML += myArray.shift();
+	} else {
+		clearTimeout(loopTimer); 
+                return false;
+	}
+	loopTimer = setTimeout('frameLooper()',70);
+}
+frameLooper();
+</script>
+<style>
+#myTypingText {
+	padding:1px;
+padding-left: 600px;
+	color:black;
+	font-family:Arial, Helvetica, sans-serif;
+        font-size:30px;
+	line-height:1.2 em;
+}
+</style>
+<!-- login Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="login">
+  <h3>LOGIN</h3>
+  <p class="w3-large">How can we help you?</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+          <li class="w3-black w3-xlarge w3-padding-32"><a href="http://localhost/movielogin.html" target="_self" style="color: #FFFFFF">CUSTOMER</a></li>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48"><a href="http://localhost/moviesignup.html" target="_self" style="color: #FFFFFF">SIGN-UP</a></li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32"><a href="http://localhost/movieadminlogin.html" target="_self" style="color: #FFFFFF">ADMIN</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Banglore, India</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: 8095045462</p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: adityapriyadarshiex@gmail.com</p>
+      <br>
+      <form action="contact.php">
+        <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="name"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="email"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="subject"></p>
+        <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="message"></p>
+        <p>
+          <button class="w3-button w3-black" type="submit" name="button" value="SEND">
+            <i class="fa fa-paper-plane"></i> SEND
+          </button>
+        </p>
+      </form>
+    </div>
+    <div class="w3-half">
+      <!-- Add Google Maps -->
+      <div class="w3-greyscale-max" style="width:100%;height:510px;">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0774854031483!2d77.50233095054736!3d12.902738990856415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15a006e15e11%3A0xa3427875cea82218!2sJSS+Academy+Of+Technical+Education!5e0!3m2!1sen!2sin!4v1510932401277" 
+width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+        <a href="https://www.facebook.com/aditya.priyadarshi.165" target="_self" ><i class="fa fa-facebook-official w3-hover-opacity" style="color:white;"></i></a>
+    <a href="https://www.instagram.com/priyadarshi_aditya/?hl=en" target="_self" ><i class="fa fa-instagram w3-hover-opacity" style="color:white;"></i></a>   
+    <a href="https://www.linkedin.com/in/aditya-priyadarshi-88b801149/" target="_self"><i class="fa fa-linkedin w3-hover-opacity" style="color:white;"></i></a>
+  </div>
+<p>Developed with <span class="glyphicon glyphicon-heart-empty"></span> by Aditya Priyadarshi.</p>
+  <p>Copyright © 2017 WEB-TECH. Disclaimer: This site stores files on its server.</p>
+</footer>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+</body>
+</html>
